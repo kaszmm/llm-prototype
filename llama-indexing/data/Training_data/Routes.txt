@@ -1,0 +1,9 @@
+Structure of navigation routes is like this
+BaseUrl = https://qmap.qapitacorp.com/issuers/{{issuerId}}
+
+Navigate to Grant Option Award Screen:  https://qmap.qapitacorp.com/issuers/{{issuerId}}/equity-awards/grants/option-award
+Navigate to Grant Share Award Screen:  https://qmap.qapitacorp.com/issuers/{{issuerId}}/equity-awards/grants/share-award
+Navigate to Equity Award Pool or Pool Screen: https://qmap.qapitacorp.com/issuers/{{issuerId}}/equity-awards/pools
+Navigate to Equity Award Plans or Plans Screen: https://qmap.qapitacorp.com/issuers/{{issuerId}}/equity-awards/plans
+Navigate to Stakeholders Screen : https://qmap.qapitacorp.com/issuers/{{issuerId}}/stakeholders
+Navigate to Configurations Screen Or Settings Screen: https://qmap.qapitacorp.com/issuers/1/settings/configurations

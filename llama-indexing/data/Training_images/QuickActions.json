@@ -1,0 +1,214 @@
+{
+    "document": {
+        "sections": [
+            {
+                "type": "navigation_menu",
+                "elements": [
+                    {
+                        "type": "button",
+                        "description": "menu_toggle"
+                    },
+                    {
+                        "type": "text",
+                        "description": "Issuer Brand Name"
+                    },
+                    {
+                        "type": "text",
+                        "description": "Dashboard selected"
+                    },
+                    {
+                        "type": "button",
+                        "description": "Quick Actions"
+                    },
+                    {
+                        "type": "list",
+                        "description": "Quick Actions",
+                        "items": [
+                            "Add Stakeholder",
+                            "Add Award Plan",
+                            "Add Option Awards",
+                            "Add Share Awards",
+                            "Add SARs Awards",
+                            "Performance Recognition",
+                            "Add Security Class",
+                            "Add Transactions",
+                            "View Captable",
+                            "Create Scenario",
+                            "Add Valuation",
+                            "Bulk Upload",
+                            "Reports"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "header_menu",
+                "elements": [
+                    {
+                        "type": "icon_button",
+                        "description": "capita_marketplace_icon"
+                    },
+                    {
+                        "type": "icon_button",
+                        "description": "other_offerings_icon"
+                    },
+                    {
+                        "type": "icon_button",
+                        "description": "startup_deals_icon"
+                    },
+                    {
+                        "type": "icon_button",
+                        "description": "my_tasks_icon"
+                    },
+                    {
+                        "type": "user_widget",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "description": "Yashwanth Putta"
+                            },
+                            {
+                                "type": "avatar",
+                                "description": "user_avatar"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "main_content",
+                "elements": [
+                    {
+                        "type": "greeting_header",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "description": "Hello! Yashwanth Putta"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "information_section",
+                        "elements": [
+                            {
+                                "type": "text_area",
+                                "description": "capita_network_invitation"
+                            },
+                            {
+                                "type": "text_area",
+                                "description": "support_contact"
+                            },
+                            {
+                                "type": "text_area",
+                                "description": "liquidity_programs_offer"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "metrics_section",
+                        "elements": [
+                            {
+                                "type": "metric_card",
+                                "description": "investors_info_card"
+                            },
+                            {
+                                "type": "metric_card",
+                                "description": "fully_diluted_shares_info_card"
+                            },
+                            {
+                                "type": "metric_card",
+                                "description": "total_cash_raised_info_card"
+                            },
+                            {
+                                "type": "metric_card",
+                                "description": "current_valuation_info_card"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "overview_section",
+                        "elements": [
+                            {
+                                "type": "header",
+                                "description": "Captable Overview"
+                            },
+                            {
+                                "type": "quick_actions_widget",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "description": "Quick Actions"
+                                    },
+                                    {
+                                        "type": "icon",
+                                        "description": "actions_icon"
+                                    },
+                                    {
+                                        "type": "text_area",
+                                        "description": "no_data_message"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "table",
+                                "description": "overview_of_funding_rounds_table",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "description": "Funding Rounds Header"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "description": "Transaction Date Header"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "description": "Price Per Share Header"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "description": "Cash Raised Header"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "description": "Post Money Valuation Header"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "description": "funding_rounds_data_row"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "graph_section",
+                        "elements": [
+                            {
+                                "type": "header",
+                                "description": "Issuer Brand Name's Journey So Far"
+                            },
+                            {
+                                "type": "tabs",
+                                "elements": [
+                                    {
+                                        "type": "tab",
+                                        "description": "By Price"
+                                    },
+                                    {
+                                        "type": "tab",
+                                        "description": "By Valuation"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "line_graph",
+                                "description": "valuation_over_time_graph"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

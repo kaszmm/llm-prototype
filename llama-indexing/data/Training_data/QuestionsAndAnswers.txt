@@ -1,0 +1,89 @@
+Q: What is a grant?
+A: A grant is like a gift from the company to an employee, offering them shares or stock options as a part of their compensation.
+ 
+Q: To whom the grants can be given?
+A: Grants can be given to employees, directors, consultants, and sometimes advisors of a company, as a form of equity compensation or incentive.
+ 
+Q: Who is a stakeholder?
+A: A stakeholder can be anyone who has interest in the company. They can be employee, shareholders, customers etc
+ 
+Q: Can grants be given only to the employed stakeholder?
+A: Grants can be given to anyone. Be it employees, advisors, founders etc. Note that in india, grants can not be given to advisors whereas in other jurisdiction, grants can be given literally to anyone.
+ 
+Q: What is Equity Pool and how do you define its size?
+A: An Equity Pool is a set portion of a company's shares reserved for employees/ stakeholders. Its size is usually a percentage of the company's total shares, decided based on hiring plans, competitive standards, and future growth expectations.
+ 
+Q: How Pool is associated with ESOP Plan?
+A: Multiple plans with different vesting conditions can be created from a ESOP Pool. Essentially, the Equity Pool is the source from which shares are granted to employees through the ESOP, aligning employee interests with the company's success by offering them a stake in the company's equity.
+ 
+Q: How plan is associated with Grant?
+A:  Plan has several conditions defined within like vesting parameters, seperation rules etc. When the grant is given to the employee, it is given from a specific plan that defines all the conditions for that employee. Usually, a grant is given from a plan, but it may happen that grant is given directly from the ESOP pool.
+ 
+Q: What is the grant date?
+A: The grant date is the specific date on which a company awards equity, such as stock options or shares, to an employee or other stakeholder under an equity compensation plan like an ESOP.
+ 
+Q: What is the vesting start date?
+A: The vesting start date is when the countdown begins for an employee to earn the right to own the shares or stock options given to them by the company.
+ 
+Q: Can grant date be same as Vesting start Date?
+A: In most cases, the grant date and vesting start date is same only. However in few cases or in some jurisdiction the vesting start date can be before or after grant date. In india, vesting start date can not be before the grant date. While in other jurisdiction like USA, Vesting start date can be before or ater the grant date
+ 
+Q: What is an exercise price?
+A: The exercise price is the cost at which an employee can buy shares of the company under a stock option grant. It's set on the grant date and remains fixed until the options are exercised or expire. In few cases exercise price can be different for each vesting tranche.
+ 
+Q: Can exercise price be given as 0?
+A: Yes, exercise price can be given as 0. There is no restriction on what the exercise price should be. Unlisted companies mostly give the grants at exercise price as 0, while listed or bigger company gives exercise price which is very near to their FMV.
+ 
+Q: What is FMV?
+A: It determined the fair value of the share price for a company. Usaully for unlisted compnaies the FMV is generally given by a CA or a merchant banker.
+ 
+Q: Is ESOPs same as giving shares?
+A: No, ESOPs are completely different from shares. In order to convert ESOPs to shares, the employee has to first convert those ESOPs by paying Exercise Price and Appropriate tax.
+ 
+Q: How does the company define the quantity to grant?
+A: Usually company gives more grants to en employee who have joined them in very very early stage. However the quantity may depend on the person and the value that it brings on the table. For e.g a senior software enginner from google, may get more options because company dont have enough funds to pay him/ her the salary
+ 
+Q: why do company grant options to stakeholders?
+A: In order to expect long term engagement from the stakeholder. Also if the stakeholder has the ESOPs, they feel that they are owing some part of company and if the company gets a success, then they will also enjoy the equity compensation.
+ 
+Q: what is cliff period?
+A: A cliff period is something which restricts the grant of an employee to vest for a certain period. A typical cliff is of 12 months, which means the options will get vest only after 12 months. If the employee leaves the company before 12 months, they wont be entitled to receive any options from the company
+ 
+Q: Is it mandatory to have cliff period of 12 months?
+A: In india yes, whereas in other jurisdiction, cliff can be 0.
+ 
+Q: Can my grant vest entirely on the date of grant itself?
+A: It depends on the ESOP plan from where the employee has been granted. If the plan says that the cliff is 0, and vest all the options on the date of grant, then yes, it can happen.
+ 
+Q: Can my options vest at different time intervals?
+A: Yes, thats where the vesting schedule comes in. It defines the rule when the options can get vested over the certain period of time. Typically the vesting period if of 4 years with 25% vest each year. This means that in order to get all the promised options, the employee has to stay with the company for 4 years. If in case they leave the company before that, only certain portion of options will be vested for them.
+ 
+Q: Can the options be given in decimals?
+A: Options can be given in decimals. However the companies make sure that whenever the employee exercises their option, it will always be a whole number.
+ 
+Q: Is my vesting always time based?
+A: In most cases, vesting is time based. But it may happen that the comapny has some performance criteria defined for that employee in order to vest options.
+ 
+Q: Can the company vest my options based on performance?
+A: Yes, it is called as performance based vesting. IN this case, the company defines the certain rules(criteria) for each vest. And only if the employee completes acheives that criteria, the company will allow 100% vest for that tranche. The percentage of vest can very from 0% to 100%.
+ 
+Q: Can the company vest my options based on milestones?
+A: Yes, performance based vesting is usually dependent on individual performance, while milestone performance is the combination of Company's performance as well as employee's performance
+ 
+Q: Can I exercise my entire vested options?
+A: Yes you can exercise your entire vested options. However it depends on if your company has open the exercise window during that time. If not, then even if you have vested option, the employee still cant exercise them
+ 
+Q: Can the company put any restriction on my vested options?
+A: Generally company dont put any restriction on your vested options, but company may decide when an employee can exercise their vested option. They usually open the exercise window on a certain time and only during that time the employees are allowed to exercise their vested options
+ 
+Q: Can I exercise my vested options even if I leave the company?
+A: This can be based on the seperation rules which are set at the ESOP plan level. If it allows to retain the vested option even if the employee has left the comapny , then the employee can retain those vested options
+ 
+Q: Why does the company set expiry period for the grant?
+A: A company sets an expiry period for grants to encourage employees to exercise their options within a certain timeframe, aligning employee and company interests, ensuring motivation, and managing the equity structure effectively. It also helps in planning financial and ownership projections by understanding when and how much equity might be claimed.
+ 
+Q: What do we mean by vesting of options?
+A: Vesting means the options are eligible for the employee to exercise. With exercise the employee can offocially become the shareholder of the company which sits on their captable.
+ 
+Q: What do we mean by unvested options?
+A: The options which are yet to hit their vest date, are called as unvested options. Note that unvested options, can not be exercised by the employee since they havent met the rules of vesting schedule.
