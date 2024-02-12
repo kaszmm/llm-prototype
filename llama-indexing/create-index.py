@@ -115,7 +115,6 @@ loaded_index = load_index_from_storage(storage_context=storage_context)
 # create chat engine
 chat_engine = loaded_index.as_chat_engine(chat_mode="openai", verbose=True) # there is also something called as_query_engine
 
-
 # create ui interface to interact with gpt-3 model
 iface = gr.Interface(fn=chatbot,
                      inputs=gr.components.Textbox(lines=7, placeholder="Enter your question here"),
