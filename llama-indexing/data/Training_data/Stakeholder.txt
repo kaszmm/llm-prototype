@@ -1,0 +1,13 @@
+In order to create a grant on Qapita platform, the first things you need is a stakeholder. A stakeholder can be anyone who has interest in the company. It can be an employee, advisor, consultant, investor etc. In order to create a stakeholder on the platform, you need to first login on your qapita platform. Once you logged in as an admin, you will be able to see the left panel. In the left panel you will find a module called 'Stakeholders'. Just click on that module, and you will the list of stakeholders that are already added on te platform. Now in order to create a new stakehodler, just click on the top rigt button: 'Add New Stakehodler'. Click on that button, and a form will be open up where you can see some mandatory fields in order to create a stakeholder. Below are the mandatory fields which are required in order to create a stakeholder:
+1. Type of stakeholder: Individual or Institutional - An individual stakheolder represents the single person like an employee or a investor while Institutional investor represents a institution who invest in a company (for e.g - Light Speed Ventures).
+2. If Individual is selected:
+    1. Employee - Yes/ No
+    2. Legal name - this is full name of the stakeholder / combination of first name and last name
+    3. First Name
+    4. Last Name
+    5. Employee ID - Mandatory If employee is selecetd to Yes. 
+3. If Institutional is selected:
+    1. Legal name - Legal name of the entity
+    2. Primary Contact First Name
+    3. Primary Contact Laast Name
+Once you fill the form with all the required details as above, a new stakeholder will be createte for your organisation. You can view your created stakeholders in the stakholder view screen.

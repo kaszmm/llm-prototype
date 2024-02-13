@@ -1,0 +1,10 @@
+In order to create a pool on qapita, make sure you have a security class added on the platform. An ESOP Pool is a set portion of a company's shares reserved for employees/ stakeholders. Its size is usually a percentage of the company's total shares, decided based on hiring plans, competitive standards, and future growth expectations. To create a esop pool on qapita's plarform, you need to first login with your credentials. Once logged in, you will be able to see a left panel with all the modules listed. In the left panel, you will see a module called 'Equity Awards'. Click on that Equity Awards tab to expand what list of submodules it has to offer. One of the submodule that you can find wihtin will be: 'Pool'. Click on that. On click, it will take you to the page, where you can see the list of all the already created ESOP Pool. You will see two button on the top right corner: "Add Plan" and "Add Pool". Click on "Add Pool" button, in order to start creating ESOP Pool. You will see the below mandatory things to be entered for the pool:
+1. Pool Name
+2. Underlying Share Class - Its a dropdown field, from where you can select the already created share class.
+3. Board Approval Date -  The "Board Approval Date" is the day when a company's board of directors formally agrees to specific actions or decisions. It's like setting an official stamp of approval on something important for the company.
+4. Shareholder Approval Date - The "Shareholder Approval Date" is the day when the shareholders of a company vote to agree or approve a particular decision or action proposed by the company. It's like the moment when the owners of the company say "yes" to a major decision
+5. Pool Size - Number of options that are approved by shareholders and board members
+6. Include Pool in Captable - Yes/ No
+    1. If Yes - This pool will be part of captable
+    2. If No - This pool wont be part of captable
+Once you fill in the above mandatory details, click on 'Add Pool' Button and your pool data will get saved.
