@@ -8,6 +8,8 @@ from langchain.pydantic_v1 import BaseModel, Field
 from typing import Type
 from langchain_openai import ChatOpenAI
 import gradio as gr
+from langchain_community.chat_message_histories import ChatMessageHistory
+from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.prompts import (
     ChatPromptTemplate,
     MessagesPlaceholder,
@@ -18,14 +20,33 @@ from langchain_core.prompts import (
 class CreateStakeholderInput(BaseModel):
     """Inputs for creating the stakeholder in qapita platform"""
 
-    legal_name :str = Field(description="Legal name of the stakeholder")
+    legal_name :str = Field(description="""Legal name of the stakeholder, 
+    or if not provided it will be combination of first name and last name of the stakeholder""")
     first_name :str = Field(description="First name of the stakeholder")
     last_name :str = Field(description="Last name of the stakeholder")
+    stakeholder_type :str = Field(default="Individual",description="[OPTIONAL]Type of the stakeholder that user wants to create, the only valid options are 'Individual' and 'Institution', if no type provided use 'Individual' as stakeholder_type")
+    is_employee :bool = Field(default=False, description="[OPTIONAL]Provides whether the stakholder is an employee or not, If not provided consider it to be False")
+    issuerEmployeeId :str = Field(default=None, description="[OPTIONAL]Represent the employee Id of a stakeholder, this will be a required field only if the stakeholder is an employee aka is_employee is True")
 
-def create_stakeholder(legal_name:str,first_name:str,last_name:str):
-    """Creates a stakeholder in qapita platform"""
-    data = {
-            "stakeholderId": 1700,
+def is_string_null_empty_or_whitespace(s):
+    return s is None or s.strip() == ''
+
+def create_stakeholder(legal_name:str,first_name:str,last_name:str, stakeholder_type:str="Individual", is_employee:bool=False, issuerEmployeeId:str=""):
+    """Creates a stakeholder in qapita platform."""
+
+    if is_employee and is_string_null_empty_or_whitespace(issuerEmployeeId):
+        return {
+            "statusCode":400,
+            "errorMessage": "If stakeholder is an employee then the issuer employee id is required as well."
+        }
+    
+    if stakeholder_type.lower() != "individual" and stakeholder_type.lower() != "institution":
+        return {
+            "statusCode":400,
+            "errorMessage": "Invalid Stakeholder type was provided the only valid options are 'Individual' or 'Institution'"
+        }
+
+    individual_data = {
             "issuerId": 1,
             "legalName": legal_name,
             "primaryContact": {
@@ -39,8 +60,8 @@ def create_stakeholder(legal_name:str,first_name:str,last_name:str):
             "address": None,
             "primaryBankAccount": None,
             "personalIds": [],
-            "isEmployee": False,
-            "issuerEmployeeId": "",
+            "isEmployee": is_employee,
+            "issuerEmployeeId": issuerEmployeeId,
             "dateOfBirth": None,
             "commencementDate": None,
             "customFields": [
@@ -72,14 +93,32 @@ def create_stakeholder(legal_name:str,first_name:str,last_name:str):
             "dematAccounts": [],
             "taxId": None,
             "nationality": None,
-            "stakeholderType": "Individual",
+            "stakeholderType": stakeholder_type,
             "documents": [],
             "nominees": [],
             "employmentHistory": []
     }
 
+    institutional_data = {
+        "legalName": legal_name,
+        "primaryContact": {
+            "firstName": first_name,
+            "lastName": last_name,
+            "email": ""
+        },
+        "issuerId": 1,
+        "issuerEmployeeId": "",
+        "customFields": [],
+        "taxId": "",
+        "stakeholderType": "Institution"
+    }
+
+    data = individual_data
+    if stakeholder_type.lower() == "institution":
+        data = institutional_data
+
     headers = {
-            'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjU2QzdBQ0Y1QzAxMTE1RThBNDMxODg5QzNBRkU1MzcwIiwidHlwIjoiYXQrand0In0.eyJpc3MiOiJodHRwczovL2F1dGgucWFwaXRhLmRldiIsIm5iZiI6MTcwNzY3NDY4NywiaWF0IjoxNzA3Njc0Njg3LCJleHAiOjE3MDc2NzgyODcsImF1ZCI6WyJxYXBpdGEuY2FwaXRhbGl6YXRpb24iLCJodHRwczovL2F1dGgucWFwaXRhLmRldi9yZXNvdXJjZXMiXSwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSIsImFkZHJlc3MiLCJlbWFpbCIsInJvbGVzIiwicWFwaXRhLmNhcGl0YWxpemF0aW9uIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdLCJjbGllbnRfaWQiOiJxYXBpdGEucW1hcC51YXQud2ViLnVpIiwic3ViIjoiOWFjNTU3ZTMtNTNiNy00OTA2LThmZjctMjQwMjA2MTBmNzEwIiwiYXV0aF90aW1lIjoxNzA3MjAyOTEzLCJpZHAiOiJsb2NhbCIsImxhc3RfbG9naW4iOjE3MDc2NTU1NDEsImxhc3RfbG9nb3V0IjoxNzA3NDgyODcwLCJlbWFpbCI6Inlhc2h3YW50aC5wdXR0YUBxYXBpdGFjb3JwLmNvbSIsIm5hbWUiOiJZYXNod2FudGggUHV0dGEiLCJnaXZlbl9uYW1lIjoiWWFzaHdhbnRoIiwiZmFtaWx5X25hbWUiOiJQdXR0YSIsInJvbGUiOiJBZG1pbmlzdHJhdG9yIiwic2lkIjoiMzUwOTVGRDcxODBCRjA0QzMwM0MwRkIzQURFQjhBRTUifQ.LyDNh9wS3Jg7UledMRXctVmZDVBh_ggSLH7TPJ-HwHEaMKhGloFYorzfRkx4G2Kou4z87zdCAECSxdw8IUdRdiRyTbiSPNSNffYzUKqiBpdAUGIK6V700iDmlTtJFpgLpRLo2sa5f1WYawMXzE3ZqeUNG2krATZlGYPnocaSOkyFNuHuF5g9LJkOytZNMo6BHiwd5LkuvJ82B0-1Nnzs7hhuBmfu3pJVblWACecGVxNAkUudZw0xBQl9R1GW-KbL1aaSg-TaYLaftcEvxlm9jXWV0g7vcrw6dvXRpbdrTS2LD9sde3CWC5To8z9rdRCF8PeWaGDLniQF3DBsm8Dxlg',  
+            'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjU2QzdBQ0Y1QzAxMTE1RThBNDMxODg5QzNBRkU1MzcwIiwidHlwIjoiYXQrand0In0.eyJpc3MiOiJodHRwczovL2F1dGgucWFwaXRhLmRldiIsIm5iZiI6MTcwNzc1MDQzOCwiaWF0IjoxNzA3NzUwNDM4LCJleHAiOjE3MDc3NTQwMzgsImF1ZCI6WyJxYXBpdGEuY2FwaXRhbGl6YXRpb24iLCJodHRwczovL2F1dGgucWFwaXRhLmRldi9yZXNvdXJjZXMiXSwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSIsImFkZHJlc3MiLCJlbWFpbCIsInJvbGVzIiwicWFwaXRhLmNhcGl0YWxpemF0aW9uIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdLCJjbGllbnRfaWQiOiJxYXBpdGEucW1hcC51YXQud2ViLnVpIiwic3ViIjoiOWFjNTU3ZTMtNTNiNy00OTA2LThmZjctMjQwMjA2MTBmNzEwIiwiYXV0aF90aW1lIjoxNzA3MjAyOTEzLCJpZHAiOiJsb2NhbCIsImxhc3RfbG9naW4iOjE3MDc3NDI1ODUsImxhc3RfbG9nb3V0IjoxNzA3NzQxMTQyLCJlbWFpbCI6Inlhc2h3YW50aC5wdXR0YUBxYXBpdGFjb3JwLmNvbSIsIm5hbWUiOiJZYXNod2FudGggUHV0dGEiLCJnaXZlbl9uYW1lIjoiWWFzaHdhbnRoIiwiZmFtaWx5X25hbWUiOiJQdXR0YSIsInJvbGUiOiJBZG1pbmlzdHJhdG9yIn0.bcUqZWa-VS2f-qGDRn0X2S3HSgm8lC75U35-7iMiKPJ7CkesH2uTMV2rfZie-UIUnemmEudg8bMGo91SQuIwsn300-RJ01rJKletf0ZJSHnLJmkBAE0yRwB64ZDr5fTZjd8uhnOJ83gw3ypB5dbuTtmwLDpklS1yr4poKC7RXGlcHkpyxTL5sTVjk7W7TnlRtU4sSm8UoBbxNGVYAW2UTdmjpOcOapCh-1I3zYLdEfLW8Ra8k_HVqbinCiM0Usixf3dJBnprMYgD1s-g4ZO1MZUv9iMk_wIRC3beu0hisSjwqUoJQ-vJutmLlFxOLBvSAXBGt6Y7HaF_PtcHqPt6cA',  
             'Content-Type': 'application/json'
     }
 
@@ -96,6 +135,7 @@ create_stakeholder_tool = StructuredTool.from_function(
     name = "create_stakeholder_tool",
     description="""This tool can be used to create the stakeholder in qapita platform.
     This tool requires legal name, first and last name of the stakeholder in order to create a stakeholder.
+    If legal name not provided and stakeholder full name is provided then use the full name as legal name and pick the first and last name from the full name provided.
     """,
     args_schema=CreateStakeholderInput,
     return_direct=False
@@ -119,8 +159,17 @@ tools = [create_stakeholder_tool]
 agent = create_openai_tools_agent(langchainLlm,tools,prompt)
 agent_executor = AgentExecutor(agent=agent,tools=tools,verbose=True)
 
+message_history = ChatMessageHistory()
+agent_with_chat_history = RunnableWithMessageHistory(
+    agent_executor,
+    # This is needed because in most real world scenarios, a session id is needed
+    # It isn't really used here because we are using a simple in memory ChatMessageHistory
+    lambda session_id: message_history,
+    input_messages_key="input",
+    history_messages_key="chat_history",
+)
 def execute_task(input_text):
-    response = agent_executor.invoke({"input": input_text, "chat_history":[]})
+    response = agent_with_chat_history.invoke({"input": input_text} , config={"configurable": {"session_id": "<foo>"}})
     print(response)
     return response["output"]
 
