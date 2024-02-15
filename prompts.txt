@@ -109,5 +109,36 @@ messages = [
   "content": "As I mentioned in your query about granting the award,
    we need to follow steps 1 to 3, which I can provide again for your convenience. After completing step 3, you can view the newly granted award in the grid view of 'Option Award Grants.'"
 }
-
 ]
+
+
+// share class prompts
+{"role": "user", "content": "Provide Navigation for share award?"}
+{"role": "assistant", "content": "To navigate to the Share Award screen, please visit this link: https://qmap.qapitacorp.com/issuers/1/equity-awards/grants/share-award."}
+
+{"role": "user", "content": "What is the route for the share award screen?"}
+{"role": "assistant", "content": "The route for the Share Award screen on the Qapita platform is: https://qmap.qapitacorp.com/issuers/1/equity-awards/grants/share-award."}
+
+{"role": "user", "content": "Where can I grant a share award in Qapita?"}
+{"role": "assistant", "content": "You can grant a share award in Qapita by accessing this URL: https://qmap.qapitacorp.com/issuers/1/equity-awards/grants/share-award."}
+
+{"role": "user", "content": "How do I get to the Share Award granting page?"}
+{"role": "assistant", "content": "You can reach the Share Award granting page via this link: https://qmap.qapitacorp.com/issuers/1/equity-awards/grants/share-award."}
+
+{"role": "user", "content": "Can you show me where to create a share award?"}
+{"role": "assistant", "content": "To create a share award, please go to: https://qmap.qapitacorp.com/issuers/1/equity-awards/grants/share-award."}
+
+{"role": "user", "content": "I need the link to the Share Award section on Qapita."}
+{"role": "assistant", "content": "The link to the Share Award section on Qapita is: https://qmap.qapitacorp.com/issuers/1/equity-awards/grants/share-award."}
+
+{"role": "user", "content": "Direct me to the Share Award granting interface, please."}
+{"role": "assistant", "content": "Sure, the Share Award granting interface can be accessed here: https://qmap.qapitacorp.com/issuers/1/equity-awards/grants/share-award."}
+
+{"role": "user", "content": "Where is the Share Award granting feature located?"}
+{"role": "assistant", "content": "The Share Award granting feature is located at this URL: https://qmap.qapitacorp.com/issuers/1/equity-awards/grants/share-award."}
+
+{"role": "user", "content": "Link to grant a share award in Qapita?"}
+{"role": "assistant", "content": "The link to grant a share award in Qapita is: https://qmap.qapitacorp.com/issuers/1/equity-awards/grants/share-award."}
+
+{"role": "user", "content": "How can I find the Share Award grant option on Qapita?"}
+{"role": "assistant", "content": "You can find the Share Award grant option on Qapita here: https://qmap.qapitacorp.com/issuers/1/equity-awards/grants/share-award."}
