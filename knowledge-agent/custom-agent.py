@@ -26,7 +26,8 @@ from langchain_core.prompts import (
 
 base_url = "https://captableuat.qapita.dev"
 issuer_id = 1
-access_token = "eyJhbGciOiJSUzI1NiIsImtpZCI6IjYxQ0UwMDkyRkUzRTNEQTRENDg0Qjg3N0RCRTdGQzBFIiwidHlwIjoiYXQrand0In0.eyJpc3MiOiJodHRwczovL2F1dGgucWFwaXRhLmRldiIsIm5iZiI6MTcwODAzODIwOCwiaWF0IjoxNzA4MDM4MjA4LCJleHAiOjE3MDgwNDE4MDgsImF1ZCI6WyJxYXBpdGEuY2FwaXRhbGl6YXRpb24iLCJodHRwczovL2F1dGgucWFwaXRhLmRldi9yZXNvdXJjZXMiXSwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSIsImFkZHJlc3MiLCJlbWFpbCIsInJvbGVzIiwicWFwaXRhLmNhcGl0YWxpemF0aW9uIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdLCJjbGllbnRfaWQiOiJxYXBpdGEucW1hcC51YXQud2ViLnVpIiwic3ViIjoiOWFjNTU3ZTMtNTNiNy00OTA2LThmZjctMjQwMjA2MTBmNzEwIiwiYXV0aF90aW1lIjoxNzA4MDI3NjI3LCJpZHAiOiJsb2NhbCIsImxhc3RfbG9naW4iOjE3MDc5OTU1OTYsImxhc3RfbG9nb3V0IjoxNzA3OTIyNjgwLCJlbWFpbCI6Inlhc2h3YW50aC5wdXR0YUBxYXBpdGFjb3JwLmNvbSIsIm5hbWUiOiJZYXNod2FudGggUHV0dGEiLCJnaXZlbl9uYW1lIjoiWWFzaHdhbnRoIiwiZmFtaWx5X25hbWUiOiJQdXR0YSIsInJvbGUiOiJBZG1pbmlzdHJhdG9yIiwic2lkIjoiNEFFNUVERjMzQ0Q0RDg2RDVCMUE1NDM2ODlGMkI5REIifQ.El43NMCOW0hXTUBpgUiybh9sV69a6ghr3nWSWeLUJGNXfuC1hquc31TLe4phzYL-PLaSuNLM_M9hsFUPpN_2IR8qqqBkQmCT8w2ncIXuPFvy0C8c6ekq-7hudUG5fi8VjqcIttORF0r5ZkGY5xQof8RtWIjbdBQyR_f_iJEq3tRgKNpO6kF5l8sxfb3NB4KRmHVn6zq1bSbhlyI-HHBgDbUYBivTW-y6IxgBL6e_LaBJCywi6fH35OWBlq3ePurZAqdFKf6SSUjJPnOaOAb-jZ5vabHceZpM0UG6t1BtGV1obubfOaGxsnU5yRomx7nlkpFxoTfYSdZf1A9QNDQgGg"
+access_token = "eyJhbGciOiJSUzI1NiIsImtpZCI6IjYxQ0UwMDkyRkUzRTNEQTRENDg0Qjg3N0RCRTdGQzBFIiwidHlwIjoiYXQrand0In0.eyJpc3MiOiJodHRwczovL2F1dGgucWFwaXRhLmRldiIsIm5iZiI6MTcwODA1NzE1NCwiaWF0IjoxNzA4MDU3MTU0LCJleHAiOjE3MDgwNjA3NTQsImF1ZCI6WyJxYXBpdGEuY2FwaXRhbGl6YXRpb24iLCJodHRwczovL2F1dGgucWFwaXRhLmRldi9yZXNvdXJjZXMiXSwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSIsImFkZHJlc3MiLCJlbWFpbCIsInJvbGVzIiwicWFwaXRhLmNhcGl0YWxpemF0aW9uIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdLCJjbGllbnRfaWQiOiJxYXBpdGEucW1hcC51YXQud2ViLnVpIiwic3ViIjoiOWFjNTU3ZTMtNTNiNy00OTA2LThmZjctMjQwMjA2MTBmNzEwIiwiYXV0aF90aW1lIjoxNzA4MDI3NjI3LCJpZHAiOiJsb2NhbCIsImxhc3RfbG9naW4iOjE3MDc5OTU1OTYsImxhc3RfbG9nb3V0IjoxNzA3OTIyNjgwLCJlbWFpbCI6Inlhc2h3YW50aC5wdXR0YUBxYXBpdGFjb3JwLmNvbSIsIm5hbWUiOiJZYXNod2FudGggUHV0dGEiLCJnaXZlbl9uYW1lIjoiWWFzaHdhbnRoIiwiZmFtaWx5X25hbWUiOiJQdXR0YSIsInJvbGUiOiJBZG1pbmlzdHJhdG9yIn0.Zgddgy1E1-WHGPc6yoz45NlCu7HNpKEay_GQvNyolrH4_iG1L5HIrmMLu-4LFi09quc-JPllvVC-6eccDprxIWNFILfEe6WyvFH2DGRqTpOkKE7dTQ_1VWZo-PEUzJsmRDv72QO3eEKYA7HS-GwUlYVn3Zv4uEPjWzPjT6_ra5odOl9EaOJKVSzhWyt_X0XO-Dwrcg6_DvON1xw7mmOJEgDtJH9nNqd7WtfvwUHcjrEvV14F8NLg7Cp_uhgFCFGnb_WddSYIK2Mufk40fjR_79X8sMXbB0fFPjnxGNhjhXCrNJE8hRKggMCB71U0Z4BufpochdSy6JPf5foCZQKVaA"
+
 headers = {
     "Authorization": f"Bearer {access_token}",
     "Content-Type": "application/json",
@@ -47,16 +48,16 @@ class OptionAwardExerciseWindowConfigurationInput(BaseModel):
         description="""End date for opening the option award exercise window.Date Format should be in yyyy-mm-dd."""
     )
     stakeholder_filter_status: List[str] = Field(
+        default=[],
         description="""Defines a list of string listing stakeholder statuses, that are eligible for the exercise window. 
         Only 'Active' and 'Separated' are valid statuses. This list must include at least one of these statuses and should not be left empty."""
     )
 
-
 def configure_exercise_window(
     is_enabled: bool,
-    stakeholder_filter_status: List[str],
     exercise_window_start_date: str,
     exercise_window_end_date: str,
+    stakeholder_filter_status: List[str] = [],
     notify_stakeholders: bool = False,
 ):
     """Configures the exercise window only for option award.
@@ -64,12 +65,11 @@ def configure_exercise_window(
     by not providing any start and end date for exercise window, also it can enabled or disable the notfiy stakeholders flag.
     It can also change the stakeholder filter status list"""
 
-    # status_array = stakeholder_filter_status.split(",")
-    # if len(status_array) == 0:
-    #     return {
-    #         "statusCode": 400,
-    #         "errorMessage": "No stakeholder status filter got passed!",
-    #     }
+    if len(stakeholder_filter_status) == 0 and is_enabled:
+        return {
+            "statusCode": 400,
+            "errorMessage": "You need to provide for which stakholders/grantees you want to enable the window!.",
+        }
 
     cur_date_range = None
     if not is_string_null_empty_or_whitespace(
@@ -132,11 +132,10 @@ configure_option_award_exercise_window_tool = StructuredTool.from_function(
     # It can also set configuration of notfying stakeholder upon window opening using 'notify_stakeholders' flag.
     # The tool also manages stakeholder filters. It accepts a list of filter options where the valid choices are: ['Active'] for currently active grantees, ['Separated'] for grantees who are no longer active, or ['Active', 'Separated'] to include both groups. Users are required to specify one of these scenarios when setting the stakeholder status filter.
     # """,
-    description="""This tool manages the option award exercise window. It requires start and end dates ('yyyy-mm-dd' format) or an option for indefinite opening. Without these, requests are rejected. The window is considered enabled with specified dates or indefinite opening request. The 'is_enabled' flag controls window activation, and 'notify_stakeholders' flag manages stakeholder notifications. Stakeholder filters are required: options are 'Active', 'Separated', or both. The end date must not precede the start date.""",
+    description="""This tool manages the option award exercise window.It requires either both start and end dates ('yyyy-mm-dd' format) for the exercise window, or an indication to keep the window open indefinitely or permanently, without these, requests are rejected. The window is considered enabled with specified dates or indefinite opening request. The 'is_enabled' flag controls window activation, and 'notify_stakeholders' flag manages stakeholder notifications.Stakeholder filters are required only while opening or enabling the window: options are 'Active', 'Separated', or both.The exercise end date must not precede the exercise start date.""",
     args_schema=OptionAwardExerciseWindowConfigurationInput,
     return_direct=False,
 )
-
 
 class CreateStakeholderInput(BaseModel):
     """Inputs for creating the stakeholder in qapita platform"""
@@ -265,7 +264,8 @@ langchainLlm = ChatOpenAI(
     model="ft:gpt-3.5-turbo-0613:personal::8q3apor4", temperature=0.2, streaming=True
 )
 
-sytem_template = """You are a helpful assitant who can do all sort of actions like creating a stakeholder, configuring the exercise window only for option award and other function callings."""
+sytem_template = """You are a helpful assitant who can do all sort of actions like creating a stakeholder, 
+configuring the exercise window only for option award and other function callings."""
 human_template = "{input}"
 prompt = ChatPromptTemplate.from_messages(
     [
@@ -278,8 +278,7 @@ prompt = ChatPromptTemplate.from_messages(
     ]
 )
 
-# tools = [create_stakeholder_tool, configure_exercise_window]
-tools = [configure_option_award_exercise_window_tool]
+tools = [create_stakeholder_tool, configure_option_award_exercise_window_tool]
 
 agent = create_openai_tools_agent(langchainLlm, tools, prompt)
 agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
@@ -294,8 +293,7 @@ agent_with_chat_history = RunnableWithMessageHistory(
     history_messages_key="chat_history",
 )
 
-
-def execute_task(input_text):
+def execute_task(input_text,history=None):
     response = agent_with_chat_history.invoke(
         {"input": input_text}, config={"configurable": {"session_id": "<foo>"}}
     )
@@ -304,11 +302,15 @@ def execute_task(input_text):
 
 
 # create ui interface to interact with gpt-3 model
-iface = gr.Interface(
-    fn=execute_task,
-    inputs=gr.components.Textbox(lines=7, placeholder="Enter your execution here"),
-    outputs="text",
-    title="Qapita AI ChatBot: Your Knowledge Companion Powered-by ChatGPT",
-    description="Execute the any task provided by the user",
+iface = gr.ChatInterface(
+    execute_task,
+    chatbot=gr.Chatbot(height=600),
+    textbox=gr.Textbox(placeholder="Provide any task that you want me to execute ie: create a stakeholder", container=False, scale=7),
+    title="Saarthi: Qapita's AI Assistant",
+    description="Provide any mundane task that you want me to execute",
+    theme="base",
+    retry_btn="Retry",
+    undo_btn=None,
+    clear_btn="Clear History"
 )
 iface.launch(share=True)
