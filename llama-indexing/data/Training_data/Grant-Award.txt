@@ -1,0 +1,29 @@
+In qapita we provide a lot of features, one of them is granting an option award or share award.
+In order to grant an option award in Qapita platform, we need to first login with our credentials,
+once logged in we can see a left navigation panel and an dashboard with different sort of widgets.
+On the left navigation panel we can see lot of different options provided, what we are looking for is "Equtiy Awards",
+once we click on "Equity Award", it will expland and provide more Options, 
+options like 
+1. "Pools" in which we can create pool , pool is necessary in order to create a grant.
+2. "Plans" in which we can create an option or share award plan.
+3. "Grants", in which we can create an option award or share award grant
+4. "Exercises", in which admin can create an exercise on behalf of an stakeholder.
+5. Other Details as well
+
+Now once we click on "Grants", the admin will be able to see data table grid for "Option Awards", "Share Awards" and "SAR Awards",
+and on top right of the datatable grid we can see dropdown named "Grant Awards", once we click "Grant Awards" it will expand with different options like
+"Option Awards", "Share Awards" and "SAR Awards".
+
+In order to create a option award grant, we click "Option Awards", upon clicking we will be greeted with new page for granting an option award.
+Now in order to grant an option award in qapita platform there are few requried fields that is necessary.
+Mandatory fields
+1. Select a stakeholder
+2. Select a pool
+3. Enter the units that you want to grant
+4. Grant Date
+5. Exercise Price
+6. Vesting Start Date
+7. Select a Vesting Template
+8. Select a Exercise Period Template
+
+Once we fill all this 8 fields, we need to go to "Review" tab and bottom right corner there will be button called "Grant Award", once we click that we have created a grant and granted it to the selected stakeholder.

@@ -1,0 +1,114 @@
+{
+    "page": {
+        "title": "Add Share Class",
+        "navigation": {
+            "backArrow": {
+                "element": "button",
+                "function": "navigateBack",
+                "tooltip": "Go back"
+            }
+        }
+    },
+    "sidebar": {
+        "sections": [
+            {
+                "title": "Basic Details",
+                "icon": "checkmark",
+                "element": "navigationItem",
+                "currentState": "completed"
+            },
+            {
+                "title": "Supporting Legal Docs",
+                "icon": "checkmark",
+                "element": "navigationItem",
+                "currentState": "completed"
+            },
+            {
+                "title": "Price Details",
+                "icon": "checkmark",
+                "element": "navigationItem",
+                "currentState": "completed"
+            },
+            {
+                "title": "Review Details",
+                "icon": "circleOutline",
+                "element": "navigationItem",
+                "currentState": "current"
+            }
+        ]
+    },
+    "contentArea": {
+        "sections": [
+            {
+                "title": "Basic details",
+                "fields": [
+                    {
+                        "label": "Class Type",
+                        "value": "-",
+                        "element": "text"
+                    },
+                    {
+                        "label": "Share Class",
+                        "value": "-",
+                        "element": "text"
+                    },
+                    {
+                        "label": "Share Class Prefix",
+                        "value": "-",
+                        "element": "text"
+                    },
+                    {
+                        "label": "Currency",
+                        "value": "-",
+                        "element": "text"
+                    },
+                    {
+                        "label": "Exchange Rate",
+                        "value": "-",
+                        "element": "text"
+                    },
+                    {
+                        "label": "Date (First Closing)",
+                        "value": "-",
+                        "element": "text"
+                    }
+                ]
+            },
+            {
+                "title": "Price details",
+                "fields": [
+                    {
+                        "label": "Par Value",
+                        "value": "-",
+                        "element": "text"
+                    },
+                    {
+                        "label": "Price Per Share",
+                        "value": "-",
+                        "element": "text"
+                    }
+                ]
+            },
+            {
+                "title": "Documents",
+                "description": "No Documents",
+                "element": "text"
+            }
+        ]
+    },
+    "footer": {
+        "buttons": [
+            {
+                "label": "Back",
+                "element": "button",
+                "function": "navigateBack"
+            },
+            {
+                "label": "Create new Share Class",
+                "element": "button",
+                "function": "createShareClass",
+                "style": "primary"
+            }
+        ]
+    }
+}

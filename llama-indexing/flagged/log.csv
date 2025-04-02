@@ -1,0 +1,11 @@
+input_text,output,flag,username,timestamp
+,"A grant is a type of equity award that is given to individuals within an organization. It can include various types of stock-based compensation, such as common stock, restricted stock units, bonus awards, stock appreciation rights, and performance-based stock awards. Grants are typically managed and disbursed through a platform like QapMap, which allows organizations to track and monitor the grants awarded to their employees.
+
+The steps to create a grant are as follows:
+1. In the ""Select Type of Grants"" section, choose either E-sign to enable the e-signature process or Click to Accept to give the employee the option to accept the grant.
+2. Optionally, you can associate approvers to approve the grant by selecting their names or adding new approvers.
+3. Provide the details of the approver in the displayed dialog box and click Add Approver.
+4. Set the date or timeline for acceptance by either specifying a specific date or the number of days within which the grantee must accept the grant.
+5. Select a grant letter template and add any relevant supporting documents.
+6. Review all the details in the grant and make any necessary edits.
+7. Finally, click Grant Award to create the grant.",,,2024-02-10 12:11:13.506714

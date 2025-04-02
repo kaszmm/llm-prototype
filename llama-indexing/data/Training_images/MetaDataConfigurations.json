@@ -1,0 +1,210 @@
+{
+    "interface": {
+        "title": "Issuer Brand Name",
+        "navigationBar": {
+            "elements": [
+                {
+                    "type": "logo",
+                    "description": "Company logo in the top left corner"
+                },
+                {
+                    "type": "text",
+                    "description": "Navigation bar item",
+                    "label": "Quick Actions"
+                },
+                {
+                    "type": "icon",
+                    "description": "Dropdown arrow next to Quick Actions"
+                },
+                {
+                    "type": "text",
+                    "description": "Navigation bar item",
+                    "label": "Dashboard"
+                },
+                {
+                    "type": "text",
+                    "description": "Navigation bar item",
+                    "label": "Ownership"
+                },
+                {
+                    "type": "text",
+                    "description": "Navigation bar item",
+                    "label": "Equity Awards"
+                },
+                {
+                    "type": "text",
+                    "description": "Navigation bar item",
+                    "label": "Stakeholders"
+                },
+                {
+                    "type": "text",
+                    "description": "Navigation bar item",
+                    "label": "Reports"
+                },
+                {
+                    "type": "text",
+                    "description": "Navigation bar item",
+                    "label": "Documents"
+                },
+                {
+                    "type": "text",
+                    "description": "Navigation bar item with expansion indicator",
+                    "label": "Employee Engagement"
+                },
+                {
+                    "type": "text",
+                    "description": "Highlighted navigation bar item with expansion indicator",
+                    "label": "Settings"
+                },
+                {
+                    "type": "subNavigationItems",
+                    "elements": [
+                        {
+                            "type": "text",
+                            "description": "Sub navigation item",
+                            "label": "Manage Users"
+                        },
+                        {
+                            "type": "text",
+                            "description": "Sub navigation item",
+                            "label": "Manage Roles"
+                        },
+                        {
+                            "type": "text",
+                            "description": "Sub navigation item",
+                            "label": "Configurations"
+                        },
+                        {
+                            "type": "text",
+                            "description": "Sub navigation item",
+                            "label": "Templates"
+                        },
+                        {
+                            "type": "text",
+                            "description": "Sub navigation item",
+                            "label": "Bulk Upload"
+                        },
+                        {
+                            "type": "text",
+                            "description": "Sub navigation item",
+                            "label": "Valuations"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "description": "Footer item",
+                    "label": "Support icon and tooltip"
+                }
+            ]
+        },
+        "mainContent": {
+            "page": {
+                "type": "text",
+                "description": "Page title",
+                "label": "Settings"
+            },
+            "sections": [
+                {
+                    "title": "Dashboard Settings",
+                    "settingsItems": [
+                        "Dashboard Valuation Configuration",
+                        "Custom Dashboards",
+                        "Announcement Configuration"
+                    ]
+                },
+                {
+                    "title": "Equity Slip Settings",
+                    "settingsItems": [
+                        "Equity Slip Configurations"
+                    ]
+                },
+                {
+                    "title": "Issuer Settings",
+                    "settingsItems": [
+                        "Master Configurations",
+                        "Listed Company Settings",
+                        "Email Notification Configuration"
+                    ]
+                },
+                {
+                    "title": "Equity Award - Grant configurations",
+                    "settingsItems": [
+                        "Performance Condition Templates",
+                        "Vesting Templates",
+                        "Exercise Period Templates",
+                        "Grant Form Configuration"
+                    ]
+                },
+                {
+                    "title": "Equity Award - Other configurations",
+                    "settingsItems": [
+                        "Exercise Configurations - Option Awards",
+                        "Surrender Window Configuration",
+                        "Configure Tax Rates",
+                        "Setup Payment Method"
+                    ]
+                },
+                {
+                    "title": "Stakeholder Settings",
+                    "settingsItems": [
+                        "Stakeholder Configurations",
+                        "Profile Configurations",
+                        "OTP Configurations"
+                    ]
+                },
+                {
+                    "title": "Nomination Settings",
+                    "settingsItems": [
+                        "Nomination Configurations"
+                    ]
+                },
+                {
+                    "title": "Share Issuance Settings",
+                    "settingsItems": [
+                        "Share Issuance Configurations"
+                    ]
+                },
+                {
+                    "title": "Formula Configurations",
+                    "settingsItems": [
+                        "FMV Formula Configurations"
+                    ]
+                }
+            ]
+        },
+        "topRightMenu": {
+            "elements": [
+                {
+                    "type": "button",
+                    "description": "Marketplace access button",
+                    "label": "Qapita Marketplace"
+                },
+                {
+                    "type": "button",
+                    "description": "Feature access button",
+                    "label": "Other Offerings"
+                },
+                {
+                    "type": "button",
+                    "description": "Shortcut button",
+                    "label": "Startup Deals"
+                },
+                {
+                    "type": "iconWithText",
+                    "description": "User tasks notification",
+                    "label": "My Tasks",
+                    "icon": "Bell icon"
+                },
+                {
+                    "type": "userProfile",
+                    "description": "User profile information",
+                    "userData": {
+                        "name": "Yaswanth Putta",
+                        "icon": "User profile icon"
+                    }
+                }
+            ]
+        }
+    }
+}

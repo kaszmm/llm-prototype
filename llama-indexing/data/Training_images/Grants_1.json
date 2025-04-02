@@ -1,0 +1,270 @@
+{
+    "interface": {
+      "header": {
+        "company_branding": {
+          "type": "logo",
+          "description": "Issuer Brand Name logo in the top left corner"
+        },
+        "navigation_menu": [
+          {
+            "type": "button",
+            "description": "Collapsible sidebar toggle",
+            "icon": "left-pointing arrow"
+          },
+          {
+            "type": "dropdown_menu",
+            "description": "Quick Actions dropdown menu",
+            "selected": false
+          }
+        ],
+        "title": {
+          "type": "heading",
+          "description": "Page title 'Equity Awards'",
+          "level": 1
+        },
+        "top_right_icons": [
+          {
+            "type": "icon_button",
+            "description": "Capita Marketplace icon link",
+            "icon": "shopping bag"
+          },
+          {
+            "type": "icon_button",
+            "description": "Other Offerings dropdown link",
+            "icon": "circle with plus sign"
+          },
+          {
+            "type": "icon_button",
+            "description": "Startup Deals icon link",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "icon_button",
+            "description": "My Tasks icon link",
+            "icon": "check mark"
+          },
+          {
+            "type": "user_profile",
+            "description": "User profile icon and name display 'Yaswanth Putta V'",
+            "name": "Yaswanth Putta V",
+            "icon": "user"
+          }
+        ]
+      },
+      "sidebar": {
+        "navigation_items": [
+          {
+            "type": "menu_item",
+            "description": "Dashboard link",
+            "selected": false
+          },
+          {
+            "type": "menu_item",
+            "description": "Ownership overview link",
+            "selected": false
+          },
+          {
+            "type": "menu_section",
+            "description": "Equity Awards section with submenu items",
+            "selected": true,
+            "submenu_items": [
+              {
+                "type": "submenu_item",
+                "description": "Pools link",
+                "selected": false
+              },
+              {
+                "type": "submenu_item",
+                "description": "Plans link",
+                "selected": false
+              },
+              {
+                "type": "submenu_item",
+                "description": "Grants link",
+                "selected": true
+              },
+              {
+                "type": "submenu_item",
+                "description": "Exercises link",
+                "selected": false
+              },
+              {
+                "type": "submenu_item",
+                "description": "Surrenders link",
+                "selected": false
+              },
+              {
+                "type": "submenu_item",
+                "description": "Financial Reports link",
+                "selected": false
+              }
+            ]
+          },
+          {
+            "type": "menu_item",
+            "description": "Stakeholders link",
+            "selected": false
+          },
+          {
+            "type": "menu_item",
+            "description": "Reports link",
+            "selected": false
+          },
+          {
+            "type": "menu_item",
+            "description": "Documents link",
+            "selected": false
+          },
+          {
+            "type": "menu_item",
+            "description": "Employee Engagement link",
+            "selected": false
+          },
+          {
+            "type": "menu_item",
+            "description": "Settings expansion toggle",
+            "selected": false
+          }
+        ],
+        "bottom_icon": {
+          "type": "icon_button",
+          "description": "Question mark icon for help or support",
+          "icon": "question mark"
+        }
+      },
+      "main_content": {
+        "info_banners": [
+          {
+            "type": "banner",
+            "description": "Notification about 'Value of Current Holdings widget is enabled. 17 Grants have been created without FMV, starting from 19 Dec, 2019. Value of Current Holdings widget cannot be displayed for those Stakeholders. Update the FMV by either editing the lacking grants from here or through the Bulk Edit tool in grants.'",
+            "level": "info"
+          }
+        ],
+        "tabs": [
+          {
+            "type": "tab",
+            "description": "Option Awards tab",
+            "selected": true
+          },
+          {
+            "type": "tab",
+            "description": "Share Awards tab",
+            "selected": false
+          },
+          {
+            "type": "tab",
+            "description": "SARs Awards tab",
+            "selected": false
+          }
+        ],
+        "actions": [
+          {
+            "type": "search_field",
+            "description": "Search input field for grant data"
+          },
+          {
+            "type": "dropdown_menu",
+            "description": "Select Action dropdown menu",
+            "selected": false
+          },
+          {
+            "type": "button",
+            "description": "Grant Awards button",
+            "icon": "right-pointing arrow"
+          }
+        ],
+        "summary_figures": [
+          {
+            "type": "figure",
+            "description": "Number of grants awarded",
+            "value": "22,444"
+          },
+          {
+            "type": "figure",
+            "description": "Number of plans",
+            "value": "3"
+          },
+          {
+            "type": "figure",
+            "description": "Number of active option holders",
+            "value": "16"
+          }
+        ],
+        "data_table": {
+          "headers": [
+            {
+              "type": "table_column_header",
+              "description": "Grant Date"
+            },
+            {
+              "type": "table_column_header",
+              "description": "Stakeholder Name"
+            },
+            {
+              "type": "table_column_header",
+              "description": "Grant ID"
+            },
+            {
+              "type": "table_column_header",
+              "description": "Employee ID"
+            },
+            {
+              "type": "table_column_header",
+              "description": "Granted"
+            },
+            {
+              "type": "table_column_header",
+              "description": "Unvested"
+            },
+            {
+              "type": "table_column_header",
+              "description": "Vested"
+            },
+            {
+              "type": "table_column_header",
+              "description": "Exercise Price"
+            },
+            {
+              "type": "table_column_header",
+              "description": "Exercised"
+            },
+            {
+              "type": "table_column_header",
+              "description": "Cancelled"
+            },
+            {
+              "type": "table_action_column",
+              "description": "Row specific actions column"
+            }
+          ],
+          "rows": [
+            {
+              "Grant Date": "Feb 1, 2023",
+              "Stakeholder Name": "Abhinandhu K R",
+              "Grant ID": "GT-OA-035",
+              "Employee ID": "AB-1123",
+              "Granted": "100",
+              "Unvested": "0",
+              "Vested": "0",
+              "Exercise Price": "INR 2",
+              "Exercised": "100",
+              "Cancelled": "0",
+              "actions": [
+                {
+                  "type": "dropdown_menu",
+                  "description": "Row options menu",
+                  "selected": false
+                }
+              ]
+            }
+          ]
+        },
+        "pagination": {
+          "type": "pagination_controls",
+          "description": "Pagination control with numbered pages",
+          "current_page": 1,
+          "total_pages": 4
+        }
+      }
+    }
+  }

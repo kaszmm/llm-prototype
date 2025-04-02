@@ -1,0 +1,89 @@
+{
+    "interface_elements": [
+      {
+        "type": "navigation_menu",
+        "description": "vertical list of menu items on the left navigation panel",
+        "items": [
+          {"type": "button", "description": "Quick Actions menu item"},
+          {"type": "button", "description": "Dashboard menu item"},
+          {"type": "button", "description": "Ownership menu item"},
+          {"type": "button", "description": "Equity Awards menu item"},
+          {"type": "button", "description": "Stakeholders menu item"},
+          {"type": "button", "description": "Reports menu item"},
+          {"type": "button", "description": "Documents menu item"},
+          {"type": "submenu", "description": "Employee Engagement with expandable options"},
+          {"type": "submenu", "description": "Settings with expandable options"}
+        ]
+      },
+      {
+        "type": "header",
+        "description": "top header bar with links and user information",
+        "elements": [
+          {"type": "text", "description": "Issuer Brand Name"},
+          {"type": "link", "description": "Capita Marketplace"},
+          {"type": "link", "description": "Other Offerings"},
+          {"type": "link", "description": "Startup Deals"},
+          {"type": "button", "description": "My Tasks dropdown"},
+          {"type": "user_info", "description": "User profile with name Yashwanth Putta"}
+        ]
+      },
+      {
+        "type": "main_content",
+        "description": "central area with dashboard content",
+        "sections": [
+          {
+            "type": "greeting_section",
+            "description": "welcome message",
+            "elements": [
+              {"type": "text", "description": "Dashboard"},
+              {"type": "greeting_text", "description": "Hello! Yashwanth Putta"}
+            ]
+          },
+          {
+            "type": "links_section",
+            "description": "section with actionable cards",
+            "cards": [
+              {"type": "action_card", "description": "invitation to join Qapita Network on Slack"},
+              {"type": "action_card", "description": "customer support contact information"},
+              {"type": "action_card", "description": "information regarding Qapita Liquidity Programs"}
+            ]
+          },
+          {
+            "type": "overview_section",
+            "description": "financial overview and metrics",
+            "metrics": [
+              {"type": "metric_card", "description": "number of INVESTORS"},
+              {"type": "metric_card", "description": "FULLY DILUTED SHARES count"},
+              {"type": "metric_card", "description": "TOTAL CASH RAISED"},
+              {"type": "metric_card", "description": "CURRENT VALUATION with last round price"}
+            ]
+          },
+          {
+            "type": "actions_overview",
+            "description": "Quick Actions with an empty state graphic",
+            "elements": [
+              {"type": "text", "description": "Quick Actions title"},
+              {"type": "graphic", "description": "No data to display graphic"},
+              {"type": "text", "description": "No data to display text"}
+            ]
+          },
+          {
+            "type": "table_view",
+            "description": "table showing overview of funding rounds",
+            "elements": [
+              {"type": "table_header", "description": "table headers for funding rounds information"},
+              {"type": "table_row", "description": "sample row with funding round information"}
+            ]
+          },
+          {
+            "type": "journey_chart",
+            "description": "visual representation of Issuer Brand Name's journey",
+            "elements": [
+              {"type": "line_chart", "description": "chart showing the growth over time"},
+              {"type": "chart_controls", "description": "buttons to toggle between Price and Valuation view"}
+            ]
+          }
+        ]
+      }
+    ]
+  }

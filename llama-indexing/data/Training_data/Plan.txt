@@ -1,0 +1,12 @@
+Plan on Qapita platform can be created via two ways:
+1. Through Pool Module: You can see a button on top right: 'Add Plan'
+2. Through Plan page: For this, you need to navigate to 'Equity Awards' Module and inside that you will see a sub module 'Plans'. An ESOP Plan, or Employee Stock Ownership Plan, is a program that gives employees a stake in the company by providing them with company shares
+Once you click on any of the button, you will be redirected to fill up the form. Below are the mandatory fields which are required to create a plan:
+1. Basic Details
+    1. Name of Award Plan
+    2. Type of Award: Option Award, Share Award and SAR Award
+    3. from Pool: Select from the pool that you have already created.
+    4. Vested Options Surrendered(Add back to the pool) - Y/N
+        1. If Y is selected - Surrendered options will be added back to the pool
+        2. If N is selected - Surredered options wont be added back to the pool
+Once you are done with the mandatory fields, you can review the data and click on 'Create Plan' button.

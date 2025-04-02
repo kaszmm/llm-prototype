@@ -1,0 +1,161 @@
+{
+    "window": {
+        "title": "Equity Management Website Interface",
+        "toolbar": [
+            {
+                "type": "dropdown",
+                "label": "Activities",
+                "function": "access different system functions"
+            }
+        ],
+        "addressBar": {
+            "type": "input",
+            "content": "site URL",
+            "function": "display current page's URL"
+        },
+        "bookmarkIcons": [
+            {
+                "type": "icon",
+                "function": "navigation shortcut",
+                "shape": "round",
+                "color": "various"
+            }
+        ]
+    },
+    "sidebar": {
+        "branding": {
+            "type": "logo",
+            "text": "Issuer Brand Name",
+            "function": "represent the issuer's brand"
+        },
+        "navigationMenu": [
+            {
+                "type": "menu item",
+                "label": "Dashboard",
+                "icon": "graph",
+                "function": "navigate to dashboard"
+            },
+            {
+                "type": "menu item",
+                "label": "Ownership",
+                "icon": "percentage",
+                "function": "navigate to ownership details"
+            },
+            {
+                "type": "submenu",
+                "label": "Captable",
+                "function": "navigate to capitalization table",
+                "items": [
+                    {
+                        "type": "menu item",
+                        "label": "Scenarios",
+                        "function": "navigate to scenarios"
+                    },
+                    {
+                        "type": "menu item",
+                        "label": "Transactions",
+                        "function": "navigate to transactions"
+                    },
+                    {
+                        "type": "menu item",
+                        "label": "Security Classes",
+                        "function": "navigate to security classes",
+                        "selected": true
+                    }
+                ]
+            },
+            {
+                "type": "menu item",
+                "label": "Equity Awards",
+                "function": "navigate to equity awards"
+            }
+        ],
+        "utilityMenu": [
+            {
+                "type": "button",
+                "label": "Settings",
+                "icon": "gear",
+                "function": "open settings"
+            }
+        ]
+    },
+    "contentArea": {
+        "pageTitle": {
+            "type": "header",
+            "level": 1,
+            "text": "Security Classes"
+        },
+        "subTabs": [
+            {
+                "type": "button",
+                "label": "Share Class",
+                "function": "display share class information",
+                "selected": true
+            },
+            {
+                "type": "button",
+                "label": "Convertible Class",
+                "function": "display convertible class information"
+            },
+            {
+                "type": "button",
+                "label": "Warrant Class",
+                "function": "display warrant class information"
+            }
+        ],
+        "table": {
+            "type": "data table",
+            "columns": [
+                {
+                    "label": "Share Class"
+                },
+                {
+                    "label": "Terms and Preferences"
+                }
+            ],
+            "rows": [
+                {
+                    "cells": [
+                        {
+                            "content": "ES Series Test11"
+                        },
+                        {
+                            "content": "Original Issue Price INR 1,000"
+                        }
+                    ]
+                },
+                {
+                    "cells": [
+                        {
+                            "content": "LS Lapse Share Class"
+                        },
+                        {
+                            "content": "Original Issue Price INR 100"
+                        }
+                    ]
+                }
+            ]
+        },
+        "actionButton": {
+            "type": "dropdown",
+            "label": "Add Security Class",
+            "options": [
+                {
+                    "label": "Share Class"
+                },
+                {
+                    "label": "Convertible Class"
+                },
+                {
+                    "label": "Warrant Class"
+                }
+            ],
+            "function": "add new security class"
+        }
+    },
+    "userProfile": {
+        "type": "avatar",
+        "name": "Yashwanth Putta",
+        "function": "user profile"
+    }
+}

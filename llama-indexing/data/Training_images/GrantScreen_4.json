@@ -1,0 +1,95 @@
+{
+    "page_layout": {
+        "header": {
+            "text": "Grant Awards"
+        },
+        "navigation_side_panel": {
+            "active_section": {
+                "text": "Approvals & Acceptance",
+                "icon": "check_circle_outline"
+            },
+            "sections": [
+                {
+                    "text": "Award Details",
+                    "icon": "info_outline",
+                    "status_indicator": "error_outline"
+                },
+                {
+                    "text": "Vesting Parameters",
+                    "icon": "trending_up",
+                    "status_indicator": "error_outline"
+                },
+                {
+                    "text": "Separation Details",
+                    "icon": "directions_walk",
+                    "status_indicator": "check_circle_outline"
+                },
+                {
+                    "text": "Additional Fields",
+                    "icon": "add_circle_outline",
+                    "status_indicator": "check_circle_outline"
+                },
+                {
+                    "text": "Review",
+                    "icon": "review"
+                }
+            ],
+            "footer_icon": {
+                "icon": "help_outline"
+            }
+        },
+        "content": {
+            "sections": [
+                {
+                    "label": "Select Type of Grants",
+                    "input_type": "radio_buttons",
+                    "options": [
+                        "Record Grant",
+                        "Enable Acceptance Flow"
+                    ]
+                },
+                {
+                    "label": "Grant Status",
+                    "input_type": "radio_buttons",
+                    "options": [
+                        {
+                            "text": "Accepted",
+                            "selected": true
+                        },
+                        "Rejected"
+                    ],
+                    "requirement_indicator": "asterisk"
+                },
+                {
+                    "label": "Acceptance Date",
+                    "input_type": "date_picker",
+                    "icon": "calendar_today"
+                },
+                {
+                    "label": "Grant Letter Template",
+                    "input_type": "drop_down_select",
+                    "placeholder": "Select Grant Letter Template",
+                    "icon": "help_outline"
+                },
+                {
+                    "label": "Supporting Documents",
+                    "description": "Drag & Drop. Supported files: Word, PDF, Excel, Images, PPT are only allowed. File size should be Maximum 100MB",
+                    "input_type": "file_upload",
+                    "button": {
+                        "text": "Choose files"
+                    }
+                }
+            ]
+        },
+        "navigation_buttons": {
+            "previous": {
+                "text": "Previous",
+                "type": "button"
+            },
+            "next": {
+                "text": "Next",
+                "type": "button"
+            }
+        }
+    }
+}

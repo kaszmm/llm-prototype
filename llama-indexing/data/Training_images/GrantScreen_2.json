@@ -1,0 +1,170 @@
+{
+    "PageTitle": {
+      "Type": "Text",
+      "Content": "Equity Pools",
+      "Function": "Displays the title of the current page"
+    },
+    "NavigationSidebar": {
+      "Type": "Sidebar",
+      "Content": [
+        {
+          "Label": "Quick Actions",
+          "Type": "Dropdown",
+          "Function": "Provides access to various quick actions"
+        },
+        {
+          "Label": "Dashboard",
+          "Type": "Link",
+          "Function": "Navigates to the dashboard"
+        },
+        {
+          "Label": "Ownership",
+          "Type": "Dropdown",
+          "Function": "Expands to show ownership related options"
+        },
+        {
+          "Label": "Equity Awards",
+          "Type": "Dropdown",
+          "Function": "Expands to show equity award options",
+          "SubMenuItems": [
+            {
+              "Label": "Pools",
+              "Type": "Sublink",
+              "IsActive": true,
+              "Function": "Displays the equity pools page"
+            },
+            {
+              "Label": "Plans",
+              "Type": "Sublink",
+              "Function": "Displays the equity plans page"
+            },
+            {
+              "Label": "Grants",
+              "Type": "Sublink",
+              "Function": "Displays the equity grants page"
+            }
+          ]
+        },
+        {
+          "Label": "Stakeholders",
+          "Type": "Dropdown",
+          "Function": "Expands to show stakeholder management options"
+        }
+      ],
+      "Function": "Allows the user to navigate to different sections of the application"
+    },
+    "EquityPoolList": {
+      "Type": "List",
+      "Content": [
+        {
+          "PoolName": "DomenickEdited",
+          "BoardApprovalDate": "August 10, 2023",
+          "ShareholderApprovalDate": "August 11, 2023",
+          "AssociatedPlans": "2",
+          "AssociatedInstruments": ["Option", "Share"],
+          "PoolSize": "100,000",
+          "Allocated": "2,642.4",
+          "Reserved": "12,411",
+          "Unallocated": "84,946.6"
+        },
+        {
+          "PoolName": "Abigale",
+          "BoardApprovalDate": "August 10, 2023",
+          "ShareholderApprovalDate": "August 11, 2023",
+          "AssociatedPlans": "1",
+          "AssociatedInstruments": ["Option"],
+          "PoolSize": "100,000",
+          "Allocated": "510",
+          "Reserved": "0",
+          "Unallocated": "99,490"
+        }
+      ],
+      "Function": "Displays a list of all equity pools with related details"
+    },
+    "AddPoolModal": {
+      "Type": "Modal",
+      "Content": {
+        "Title": {
+          "Type": "Text",
+          "Content": "Add Pool",
+          "Function": "Indicates the action the user is about to perform"
+        },
+        "FormFields": [
+          {
+            "Label": "Pool Name",
+            "Type": "InputField",
+            "Placeholder": "Enter Pool Name",
+            "IsRequired": true,
+            "Function": "Allows user to enter the name of the new pool"
+          },
+          {
+            "Label": "Board Approval Date",
+            "Type": "DatePicker",
+            "Placeholder": "Select Date",
+            "IsRequired": true,
+            "Function": "Allows user to select the board approval date for the new pool"
+          },
+          {
+            "Label": "Shareholder Approval Date",
+            "Type": "DatePicker",
+            "Placeholder": "Select Date",
+            "IsRequired": true,
+            "Function": "Allows user to select the shareholder approval date for the new pool"
+          },
+          {
+            "Label": "Pool Size",
+            "Type": "InputField",
+            "Placeholder": "Enter Pool Size",
+            "IsRequired": true,
+            "Function": "Allows user to enter the size of the new pool"
+          },
+          {
+            "Label": "Underlying Share Class",
+            "Type": "Dropdown",
+            "Placeholder": "Select Share Class",
+            "IsRequired": true,
+            "Function": "Allows user to select the share class associated with the new pool"
+          },
+          {
+            "Label": "Include Pool in Captable?",
+            "Type": "RadioButtons",
+            "Options": ["Yes", "No"],
+            "Function": "Allows user to specify if the new pool should be included in the captable"
+          },
+          {
+            "Label": "Comments",
+            "Type": "Textarea",
+            "Placeholder": "Enter Comments",
+            "Function": "Allows user to enter additional comments about the new pool"
+          },
+          {
+            "Label": "Supporting Documents",
+            "Type": "FileUpload",
+            "Function": "Allows users to attach documents to the new pool"
+          }
+        ],
+        "Actions": [
+          {
+            "Label": "Cancel",
+            "Type": "Button",
+            "Function": "Closes the modal without saving any changes"
+          },
+          {
+            "Label": "Add Pool",
+            "Type": "Button",
+            "Function": "Saves the new pool and closes the modal"
+          }
+        ]
+      },
+      "Function": "Allows users to input details for adding a new equity pool"
+    },
+    "BrandIdentity": {
+      "Type": "Text",
+      "Content": "Issuer Brand Name",
+      "Function": "Displays the issuer's or company's branding"
+    },
+    "NotificationIcon": {
+      "Type": "Icon",
+      "Function": "Indicates the presence of notifications"
+    }
+  }

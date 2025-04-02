@@ -1,0 +1,131 @@
+{
+    "interface": {
+        "title": "Grant Awards",
+        "navigation": {
+            "backButton": {
+                "type": "button",
+                "action": "navigateBack"
+            }
+        },
+        "sections": [
+            {
+                "sectionTitle": "Award Details",
+                "sectionIcon": "indicatorIcon",
+                "isActive": true
+            },
+            {
+                "sectionTitle": "Vesting Parameters",
+                "sectionIcon": "indicatorIcon"
+            },
+            {
+                "sectionTitle": "Separation Details",
+                "sectionIcon": "indicatorIcon"
+            },
+            {
+                "sectionTitle": "Additional Fields",
+                "sectionIcon": "indicatorIcon"
+            },
+            {
+                "sectionTitle": "Approvals & Acceptance",
+                "sectionIcon": "indicatorIcon"
+            },
+            {
+                "sectionTitle": "Review",
+                "sectionIcon": "indicatorIcon"
+            }
+        ],
+        "form": {
+            "fields": [
+                {
+                    "label": "Stakeholder",
+                    "type": "dropdown",
+                    "isRequired": true,
+                    "placeholder": "Select a stakeholder",
+                    "errorMessage": "Please enter Stakeholder"
+                },
+                {
+                    "label": "Stakeholder Email ID",
+                    "type": "inputText",
+                    "isRequired": true,
+                    "placeholder": "Enter Stakeholder Email ID",
+                    "errorMessage": "Email ID is mandatory if Acceptance Flow is enabled."
+                },
+                {
+                    "label": "Award Plan",
+                    "type": "dropdown",
+                    "isRequired": true,
+                    "placeholder": "No plan",
+                    "helpText": "Please select Award Plan"
+                },
+                {
+                    "label": "From Pool",
+                    "type": "dropdown",
+                    "isRequired": true,
+                    "placeholder": "Select Pool",
+                    "errorMessage": "Please select pool"
+                },
+                {
+                    "label": "Grant Certificate ID",
+                    "type": "inputText",
+                    "isRequired": false,
+                    "placeholder": "Enter Grant Certificate ID"
+                },
+                {
+                    "label": "Grant Date",
+                    "type": "inputDate",
+                    "format": "YYYY-MM-DD",
+                    "isRequired": true,
+                    "placeholder": "Please select Grant Date"
+                },
+                {
+                    "label": "Exercise Price",
+                    "type": "inputTextWithSelect",
+                    "isRequired": true,
+                    "selectOptions": [
+                        "INR"
+                    ],
+                    "placeholder": "Enter Exercise Price",
+                    "errorMessage": "Please enter exercise price"
+                }
+            ],
+            "actionSection": {
+                "label": "Enter",
+                "tabs": [
+                    {
+                        "tabTitle": "Granted Quantity",
+                        "isActive": true
+                    },
+                    {
+                        "tabTitle": "Value of Options"
+                    }
+                ],
+                "inputField": {
+                    "label": "Granted",
+                    "type": "inputText",
+                    "isRequired": true,
+                    "placeholder": "Enter Options Granted",
+                    "errorMessage": "Please enter Granted"
+                },
+                "checkbox": {
+                    "label": "Display Value of Options at Grant",
+                    "type": "checkbox"
+                }
+            }
+        },
+        "footer": {
+            "buttons": [
+                {
+                    "label": "Next",
+                    "type": "button",
+                    "action": "submitForm"
+                }
+            ]
+        },
+        "notifications": {
+            "helpButton": {
+                "type": "button",
+                "action": "openHelp"
+            }
+        }
+    }
+}

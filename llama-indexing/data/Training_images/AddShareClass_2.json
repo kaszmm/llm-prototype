@@ -1,0 +1,122 @@
+{
+    "page": {
+        "title": "Add Share Class",
+        "sections": [
+            {
+                "header": {
+                    "elementType": "breadcrumb",
+                    "elements": [
+                        {
+                            "type": "icon",
+                            "function": "navigate_back"
+                        },
+                        {
+                            "type": "text",
+                            "label": "Add Share Class"
+                        }
+                    ]
+                },
+                "type": "form",
+                "elements": [
+                    {
+                        "type": "sidebar_navigation",
+                        "items": [
+                            {
+                                "label": "Basic Details",
+                                "icon": "circle",
+                                "status": "incomplete"
+                            },
+                            {
+                                "label": "Supporting Legal Docs",
+                                "icon": "check_circle",
+                                "status": "completed"
+                            },
+                            {
+                                "label": "Price Details",
+                                "icon": "error",
+                                "status": "error"
+                            },
+                            {
+                                "label": "Review Details",
+                                "icon": "circle",
+                                "status": "incomplete"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "section",
+                        "label": "Price Details",
+                        "id": "price_details_section",
+                        "elements": [
+                            {
+                                "type": "input_field_group",
+                                "label": "Par (Face) Value",
+                                "id": "par_value_group",
+                                "inputs": [
+                                    {
+                                        "type": "dropdown",
+                                        "id": "par_value_currency",
+                                        "options": [
+                                            "INR",
+                                            "USD",
+                                            "EUR",
+                                            "...(more)"
+                                        ]
+                                    },
+                                    {
+                                        "type": "input_field",
+                                        "dataType": "number",
+                                        "id": "par_value_amount",
+                                        "placeholder": "1000"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "input_field_group",
+                                "label": "Price per share",
+                                "mandatory": true,
+                                "id": "price_per_share_group",
+                                "inputs": [
+                                    {
+                                        "type": "dropdown",
+                                        "id": "price_currency",
+                                        "options": [
+                                            "INR",
+                                            "USD",
+                                            "EUR",
+                                            "...(more)"
+                                        ]
+                                    },
+                                    {
+                                        "type": "input_field",
+                                        "dataType": "number",
+                                        "id": "price_amount",
+                                        "placeholder": "1000"
+                                    }
+                                ],
+                                "helpText": "Enter valid number."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "action_buttons",
+                        "elements": [
+                            {
+                                "label": "Back",
+                                "id": "back_button",
+                                "function": "navigate_back",
+                                "style": "secondary"
+                            },
+                            {
+                                "label": "Next",
+                                "id": "next_button",
+                                "function": "navigate_forward",
+                                "style": "primary"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

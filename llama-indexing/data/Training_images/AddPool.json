@@ -1,0 +1,237 @@
+{
+    "Header": {
+      "Logo": {
+        "Type": "Image",
+        "Description": "Company logo on the top left corner"
+      },
+      "Title": {
+        "Type": "Text",
+        "Content": "Issuer Brand Name"
+      },
+      "UserProfile": {
+        "Type": "Icon",
+        "Description": "User profile icon on the bottom left corner"
+      }
+    },
+    "NavigationMenu": {
+      "QuickActions": {
+        "Type": "DropdownMenu",
+        "Description": "Quick actions dropdown menu"
+      },
+      "MenuItems": [
+        {
+          "Name": "Dashboard",
+          "Type": "NavLink",
+          "Active": false
+        },
+        {
+          "Name": "Ownership",
+          "Type": "NavLink",
+          "Active": false
+        },
+        {
+          "Name": "Equity Awards",
+          "Type": "NavLink",
+          "Active": true,
+          "SubItems": [
+            {
+              "Name": "Pools",
+              "Type": "NavLink",
+              "Active": true
+            },
+            {
+              "Name": "Plans",
+              "Type": "NavLink",
+              "Active": false
+            },
+            {
+              "Name": "Grants",
+              "Type": "NavLink",
+              "Active": false
+            },
+            {
+              "Name": "Exercises",
+              "Type": "NavLink",
+              "Active": false
+            },
+            {
+              "Name": "Surrenders",
+              "Type": "NavLink",
+              "Active": false
+            }
+          ]
+        },
+        {
+          "Name": "Financial Reports",
+          "Type": "NavLink",
+          "Active": false
+        },
+        {
+          "Name": "Stakeholders",
+          "Type": "NavLink",
+          "Active": false
+        },
+        {
+          "Name": "Reports",
+          "Type": "NavLink",
+          "Active": false
+        },
+        {
+          "Name": "Documents",
+          "Type": "NavLink",
+          "Active": false
+        },
+        {
+          "Name": "Employee Engagement",
+          "Type": "NavLink",
+          "Active": false
+        },
+        {
+          "Name": "Settings",
+          "Type": "NavLink",
+          "Active": false
+        }
+      ]
+    },
+    "MainContent": {
+      "PageTitle": {
+        "Type": "Text",
+        "Content": "Equity Pools"
+      },
+      "EquityPoolList": [
+        {
+          "EquityPoolName": "DomenickEdited",
+          "Details": [
+            {
+              "Type": "Text",
+              "Label": "Board Approved on",
+              "Value": "August 10, 2023"
+            },
+            {
+              "Type": "Text",
+              "Label": "Shareholder Approved on",
+              "Value": "August 11, 2023"
+            },
+            {
+              "Type": "Text",
+              "Label": "Associated Plans",
+              "Value": "2"
+            },
+            {
+              "Type": "Text",
+              "Label": "Associated Instruments",
+              "Value": "Option, Share, SARs"
+            },
+            {
+              "Type": "Text",
+              "Label": "Pool Size",
+              "Value": "100,000"
+            },
+            {
+              "Type": "ProgressBar",
+              "Categories": [
+                {
+                  "Label": "Allocated",
+                  "Value": "2,642.4"
+                },
+                {
+                  "Label": "Reserved",
+                  "Value": "12,411"
+                },
+                {
+                  "Label": "Unallocated",
+                  "Value": "84,946.6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "EquityPoolName": "Abigale",
+          "Details": [
+          ]
+        },
+        {
+          "EquityPoolName": "Net Exercise pool",
+          "Details": [
+          ]
+        }
+      ]
+    },
+    "ModalWindow": {
+      "Title": {
+        "Type": "Text",
+        "Content": "Add Pool"
+      },
+      "FormFields": [
+        {
+          "Label": "Pool Name",
+          "Type": "TextInput",
+          "Placeholder": "Enter Pool Name",
+          "Required": true
+        },
+        {
+          "Label": "Board Approval Date",
+          "Type": "DateInput",
+          "Placeholder": "Select Date",
+          "Required": true
+        },
+        {
+          "Label": "Pool Size",
+          "Type": "TextInput",
+          "Placeholder": "Enter Pool Size",
+          "Required": true
+        },
+        {
+          "Label": "Underlying Share Class",
+          "Type": "DropdownMenu",
+          "Placeholder": "Select Share Class",
+          "Required": true
+        },
+        {
+          "Label": "Shareholder Approval Date",
+          "Type": "DateInput",
+          "Placeholder": "Select Date",
+          "Required": true
+        },
+        {
+          "Label": "Include Pool in Captable?",
+          "Type": "RadioButtons",
+          "Options": [
+            {
+              "Label": "Yes",
+              "Value": true
+            },
+            {
+              "Label": "No",
+              "Value": false
+            }
+          ]
+        },
+        {
+          "Label": "Comments",
+          "Type": "TextArea",
+          "Placeholder": "Enter Comments"
+        },
+        {
+          "Label": "Supporting Documents",
+          "Type": "FileInput",
+          "Description": "Drag & Drop or Choose files",
+          "SupportedFileTypes": "Word, PDF, Excel, Images, PPT only",
+          "MaxFileSize": "100MB"
+        }
+      ],
+      "ActionButtons": [
+        {
+          "Label": "Cancel",
+          "Type": "Button",
+          "Action": "Close Modal"
+        },
+        {
+          "Label": "Add Pool",
+          "Type": "Button",
+          "Action": "Submit Form"
+        }
+      ]
+    }
+  }  

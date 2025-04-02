@@ -1,0 +1,163 @@
+{
+    "page": {
+      "title": "Grant Awards",
+      "sections": [
+        {
+          "section": "Navigation Panel",
+          "items": [
+            {
+              "itemType": "BackNavigation",
+              "label": "Back Arrow",
+              "function": "Navigate Back"
+            },
+            {
+              "itemType": "Text",
+              "label": "Grant Awards"
+            }
+          ]
+        },
+        {
+          "section": "Progress List",
+          "items": [
+            {
+              "itemType": "ListItem",
+              "label": "Award Details",
+              "icon": "check_circle",
+              "state": "completed"
+            },
+            {
+              "itemType": "ListItem",
+              "label": "Vesting Parameters",
+              "icon": "check_circle",
+              "state": "completed"
+            },
+            {
+              "itemType": "ListItem",
+              "label": "Separation Details",
+              "icon": "check_circle",
+              "state": "completed"
+            },
+            {
+              "itemType": "ListItem",
+              "label": "Additional Fields",
+              "icon": "check_circle",
+              "state": "completed"
+            },
+            {
+              "itemType": "ListItem",
+              "label": "Approvals & Acceptance",
+              "icon": "check_circle",
+              "state": "completed"
+            },
+            {
+              "itemType": "ListItem",
+              "label": "Review",
+              "icon": "info",
+              "state": "current"
+            }
+          ]
+        },
+        {
+          "section": "Main Content",
+          "items": [
+            {
+              "subsection": "Awardee Details",
+              "elements": [
+                {
+                  "elementType": "Text",
+                  "label": "Stakeholder",
+                  "content": "Abhinandhu K R"
+                },
+                {
+                  "elementType": "Text",
+                  "label": "Stakeholder Email ID",
+                  "content": "abhinandhu.kr@gmail.com"
+                },
+                {
+                  "elementType": "Text",
+                  "label": "Stakeholder Emp ID",
+                  "content": "AB-1123"
+                },
+                {
+                  "elementType": "Text",
+                  "label": "Awardee Status",
+                  "content": "Active"
+                }
+              ]
+            },
+            {
+              "subsection": "Grant Details",
+              "elements": [
+                {
+                  "elementType": "Text",
+                  "label": "Grant Certificate ID",
+                  "content": "-"
+                },
+                {
+                  "elementType": "Text",
+                  "label": "Grant Date",
+                  "content": "Feb 14, 2024"
+                },
+                {
+                  "elementType": "Text",
+                  "label": "Award Type",
+                  "content": "Option Award"
+                },
+                {
+                  "elementType": "Text",
+                  "label": "Award Plan",
+                  "content": "-"
+                },
+                {
+                  "elementType": "Text",
+                  "label": "Pool",
+                  "content": "Abigale"
+                },
+                {
+                  "elementType": "Text",
+                  "label": "Type of grant",
+                  "content": "Record Grant"
+                },
+                {
+                  "elementType": "Text",
+                  "label": "Exercise Price",
+                  "content": "INR 12"
+                },
+                {
+                  "elementType": "Text",
+                  "label": "Granted",
+                  "content": "12"
+                }
+              ]
+            },
+            {
+              "subsection": "Vesting Schedule",
+              "elements": [
+                {
+                  "elementType": "Text",
+                  "label": "Vesting Start Date",
+                  "content": "Feb 14, 2024"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "section": "Action Buttons",
+          "items": [
+            {
+              "itemType": "Button",
+              "label": "Previous",
+              "function": "Navigate to Previous Page"
+            },
+            {
+              "itemType": "Button",
+              "label": "Grant Award",
+              "function": "Submit Grant Award",
+              "highlight": "Primary Action"
+            }
+          ]
+        }
+      ]
+    }
+  }  

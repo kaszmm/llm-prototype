@@ -1,0 +1,104 @@
+{
+    "page_structure": {
+        "navigation": {
+            "back_button": {
+                "type": "button",
+                "label": "Back arrow",
+                "function": "Navigate to the previous screen"
+            },
+            "page_title": {
+                "type": "text",
+                "label": "Add Share Class"
+            }
+        },
+        "sections": [
+            {
+                "section_title": "Basic Details",
+                "required_indicator": true,
+                "fields": [
+                    {
+                        "field_name": "Class Type",
+                        "type": "toggle_buttons",
+                        "options": [
+                            "Common",
+                            "Preferred"
+                        ]
+                    },
+                    {
+                        "field_name": "Share Class",
+                        "type": "text_field",
+                        "value": "Series D",
+                        "placeholder": "Please enter share class name",
+                        "required_indicator": true
+                    },
+                    {
+                        "field_name": "Share Class Code",
+                        "type": "text_field",
+                        "value": "SD",
+                        "placeholder": "Please enter share class code",
+                        "required_indicator": true,
+                        "info_icon": true
+                    },
+                    {
+                        "field_name": "Currency",
+                        "type": "dropdown",
+                        "selected_option": "INR",
+                        "options": [
+                            "Dropdown element not fully visible"
+                        ],
+                        "required_indicator": true
+                    },
+                    {
+                        "field_name": "Exchange Rate",
+                        "type": "text_field",
+                        "value": "1",
+                        "placeholder": "Exchange rate input field"
+                    },
+                    {
+                        "field_name": "Date(First Closing)",
+                        "type": "date_picker",
+                        "placeholder": "Select date",
+                        "additional_text": "Please enter first closing date",
+                        "required_indicator": true,
+                        "calendar_icon": true
+                    }
+                ]
+            }
+        ],
+        "navigation_buttons": {
+            "next_button": {
+                "type": "button",
+                "label": "Next",
+                "function": "Proceed to the next step in the form"
+            }
+        }
+    },
+    "sidebar": {
+        "sections": [
+            {
+                "title": "Basic Details",
+                "indicator": "active",
+                "icon": "circle",
+                "function": "Indicates current section"
+            },
+            {
+                "title": "Supporting Legal Docs",
+                "indicator": "inactive",
+                "icon": "circle",
+                "function": "Represents an incomplete section"
+            },
+            {
+                "title": "Price Details",
+                "indicator": "inactive",
+                "icon": "circle",
+                "function": "Represents an incomplete section"
+            },
+            {
+                "title": "Review Details",
+                "indicator": "inactive",
+                "icon": "circle",
+                "function": "Represents an incomplete section"
+            }
+        ]
+    }
+}
